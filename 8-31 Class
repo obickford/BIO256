@@ -1,0 +1,43 @@
+'''=======================
+example from 8/31 class
+=========================='''
+
+def foo(name, age, num):
+    '''
+    This is used for...
+    :param name:
+    :param age:
+    :param num:
+    :return:
+    '''
+    #comment 1
+    #comment2
+    age= age-num
+    return age
+
+# newage=(foo('Olivia', 50, 20))
+# print('Olivia is now', newage, 'years old')
+
+def calculator(arg1, operator, arg2):
+    '''
+    This function mimics a calculator
+    :param arg1: the first number
+    :param operator: the operation, needs 2 numbers
+    :param arg2: the second number entered
+    :return: result
+    '''
+    result = 0
+    if operator == '+':
+        result = arg1+arg2
+    if operator == '-':
+        result = arg1-arg2
+    if operator == '*':
+        result = arg1*arg2
+    if operator == '/':
+        result == arg1/arg2
+    return result
+
+print(calculator(100,'+',200))
+print(calculator(100, '*', 200))
+myresult=calculator(100, '*', 200)
+print(myresult)
