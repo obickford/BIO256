@@ -1,0 +1,70 @@
+'''===================================
+Class Notes 9-7
+==================================='''
+
+>>> myresult="ATCGN".find("GC")
+>>> print(myresult)
+-1
+>>> myresult
+-1
+>>> dna_seq='ATCGATCG'
+>>> len(dna_seq)
+8
+>>> seq_length=len(dna_seq)
+>>> seq_length
+8
+>>> dna_seq='ANTCGTGN'
+>>> dna_seq.replace('N', 'G')
+'AGTCGTGG'
+>>> new_seq=dna_seq.replace('N', 'G')
+>>> new_seq
+'AGTCGTGG'
+>>> dna_seq
+'ANTCGTGN'
+>>> dna = '   ATGC   '
+>>> dna.strip(' ')
+'ATGC'
+>>> mystr = 'Position of a character'
+>>> mystr.find('s')
+2
+>>> mystr.find('x')
+-1
+>>> mystr.find(' ')
+8
+>>> mystr.find(' ', 9, 10)
+-1
+>>> mystr.startwith('Position')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'startwith'. Did you mean: 'startswith'?
+>>> mystr.startswith('Position')
+True
+>>> mystr.startswith('Position', 5, 12)
+False
+>>> varA='A'
+>>> varB='B'
+>>> varC='C'
+>>> print(" ".format(varA, varB, varC)
+... )
+
+>>> print(" {2} ".format(varA, varB, varC))
+ C
+>>> print(" |{2}| ".format(varA, varB, varC))
+ |C|
+>>> print('<{1}> |{2}| ({0})".format(varA+varA, varB+'Hello', varC))
+  File "<stdin>", line 1
+    print('<{1}> |{2}| ({0})".format(varA+varA, varB+'Hello', varC))
+                                                           ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> print('<{1}> |{2}| ({0})".format(varA+varA, varB+'Hello', varC))
+  File "<stdin>", line 1
+    print('<{1}> |{2}| ({0})".format(varA+varA, varB+'Hello', varC))
+                                                           ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> print('<{1}> |{2}| ({0})".format(varA+varA, varB+"Hello", varC))
+  File "<stdin>", line 1
+    print('<{1}> |{2}| ({0})".format(varA+varA, varB+"Hello", varC))
+          ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> print("<{1}> |{2}| ({0})".format(varA+varA, varB+'Hello', varC))
+<BHello> |C| (AA)
