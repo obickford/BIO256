@@ -1,0 +1,43 @@
+'''====================================================
+Put all the information about your code in this header
+======================================================'''
+
+# This is a sample Python script.
+
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+def TraceBackAges(name, age, num):
+    '''
+    This is used for...
+    :param name:
+    :param age:
+    :param num:
+    :return:
+    '''
+    #comment 1
+    #comment2
+    age= age-num
+    return age
+
+newage= (TraceBackAges('John', 60, 20))
+print('John now is', newage, 'years old')
+
+
+
+
+def print_hi (name, age):
+    print("Hi {0} your age is {1}".format(name, age))
+    age=age*5
+    print("Hi {0} your age is {1}".format(name, age))
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('Olivia', 20)
+
+DNA = "ATCG" #defining DNA as ATCG
+DNA = DNA+DNA # + means concatenation
+
+print(DNA) #going back to second DNA variable but seeing its dna+dna then goes back to the first dna and uses ATCG seeing it is assigned
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
