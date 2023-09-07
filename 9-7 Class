@@ -68,3 +68,40 @@ SyntaxError: unterminated string literal (detected at line 1)
 SyntaxError: unterminated string literal (detected at line 1)
 >>> print("<{1}> |{2}| ({0})".format(varA+varA, varB+'Hello', varC))
 <BHello> |C| (AA)
+
+#############################################################################PyCharm
+
+'''====================
+InClass Activity 9/7
+======================'''
+
+# setting up variables
+dna_seq1 = 'ATgTCtCATTcAAAGCA------'
+dna_seq2 = 'TCgTAGCtGATCgTGA'
+
+#concatenating the two variables above
+DNA_seq = dna_seq1 + dna_seq2
+print(DNA_seq)
+
+# remove the - in dna_seq
+DNA_seq = DNA_seq.replace('-', '')
+print(DNA_seq)
+
+#capitalize all lowercase in the variable
+DNA_seq = DNA_seq.upper()
+print(DNA_seq)
+
+def foo():
+    DNA_seq1 = input("Enter your first sequence ")
+    DNA_seq2 = input("Enter your second sequence ")
+    #dna_seq1 = "ATgTCtCATTcAAAGCA------"
+    #dna_seq2 = "TCgTAGCtGATCgTGA"
+    print("Your first sequence is", DNA_seq1)
+    print("Your second sequence is", DNA_seq2)
+    DNA_seq = DNA_seq1 + DNA_seq2
+    DNA_seq1.replace('-', '')
+    print(DNA_seq1)
+
+
+if __name__ == '__main__':
+    foo()
