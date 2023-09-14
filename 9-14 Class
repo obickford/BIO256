@@ -1,0 +1,40 @@
+>>> a = [1, 2, 3]
+>>> b = a
+>>> b
+[1, 2, 3]
+>>> a[0] = 'surprise'
+>>> a
+['surprise', 2, 3]
+>>> b
+['surprise', 2, 3]
+>>>
+>>> b[0] = 'back'
+>>> b
+['back', 2, 3]
+>>> a
+['back', 2, 3]
+>>> a = [1, 2, 3]
+>>> b = a.copy()
+>>> a[0] = 'surprise'
+>>> a
+['surprise', 2, 3]
+>>> b
+[1, 2, 3]
+>>>
+>>> a = [1, 2, 3]
+>>> c = list(a)
+>>> c
+[1, 2, 3]
+>>>
+>>> a = [1, 2, 3]
+>>> d = a[:]
+>>> d
+[1, 2, 3]
+>>> str = 'This is a string of words'
+>>> type(str)
+<class 'str'>
+>>> str = str.split()
+>>> str
+['This', 'is', 'a', 'string', 'of', 'words']
+>>> type(str)
+<class 'list'>
