@@ -1,0 +1,98 @@
+def foo():
+    print("entering the function...")
+    print("out of the function...")
+x=10
+y=12
+z=8
+if x < y:
+   print("1st print", x)
+if x < z:
+   print("2nd print", z)
+else:
+   print("3rd print", y)
+print("I am done")
+
+
+DNASeq='ATGCGTCAGTATTGA'
+DNASeq_length=len(DNASeq)
+
+if DNASeq_length % 3 == 0:
+    if DNASeq.startswith('ATG'):
+        print('This sequence is multiplies of 3 and starts with ATG')
+    else:
+        print('This sequence is multiplies of 3 and does not start with ATG')
+else:
+    print('This sequence is not multiplies of 3')
+
+
+# if_else.3.py
+
+Words = 'Hello'
+Letter = 'o'
+if Letter in Words:
+    print(Letter, 'is in', Words)
+
+Letter = 'o'
+if Letter == 'a' or Letter == 'e' or Letter == 'i' or Letter == 'o' or Letter == 'u':
+    print(Letter, 'is a vowel')
+else:
+    print(Letter, 'is not a vowel')
+
+Words = 'Hello'
+Letter1 = 'o'
+Letter2 = 'H'
+if Letter1 == 'o' and Letter2 == 'H':
+    print(Letter1, 'and', Letter2, 'are in', Words)
+
+
+# loop_nested_loop.py
+
+bases = 'ATGCN'
+for x in bases:
+   print(x) #runs through the code 5 times, prints each on a seperate line
+
+bases = 'ATGCN'
+for x in bases:
+   print(x, end=" ") #prints in a horizontal line
+
+bases = 'ATGCN'
+for x in bases:
+   print(x, end=" ") #prints in a horizontal line
+   print("yahoo")
+
+bases1 = 'ATG'
+bases2 = 'TGA'
+for x in bases1:    #Pairs each base 1 with base 2 and prints all the pairs
+    for y in bases2:
+	    print(x, y, sep='') #takes away the space and makes the pairs together
+
+# range.py
+
+for x in range(4):
+   print(x)
+
+for x in range(2, 9, 2):
+   print(x)
+
+DNASeq = 'ATGCG'
+for x in range(len(DNASeq)):
+   print(x, DNASeq[x])
+
+
+# enumerate.py
+
+mylist = ['A', 'T', 'G', 'C']
+for x in enumerate(mylist):
+    print(x)
+
+mylist = ['A', 'T', 'G', 'C']
+for x in enumerate(mylist, 100):
+    print(x)
+
+mySeq = 'CGTA'
+mylist = ['A', 'T', 'G', 'C']
+for x, y in enumerate(mylist):
+    print(x, y, mySeq[x])
+
+
+ 
